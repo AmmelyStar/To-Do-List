@@ -6,8 +6,8 @@ const ulEl = document.querySelector(".list");
 
 let list = JSON.parse(localStorage.getItem("list"));
 
-list.forEach(task=>{
-    toDoList(task)
+list.forEach((task)=>{
+    toDoList(task);
 });
 
 formEl.addEventListener("submit", (event)=>{
@@ -63,7 +63,7 @@ function updateLocalStorage(){
     liEls.forEach(liEl =>{
         list.push({
             name: liEl.innerText,
-            checked: liEl.classList.contains("checked")
+            checked: liEl.classList.contains("checked"),
         });
     });
 
