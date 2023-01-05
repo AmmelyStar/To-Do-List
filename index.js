@@ -8,7 +8,7 @@ let list = JSON.parse(localStorage.getItem("list"));
 
 
 if (list) {
-  list.forEach((task) => {
+    list.forEach((task) => {
     toDoList(task);
   });
 }
